@@ -6,7 +6,7 @@ parser = argparse.ArgumentParser(description='soundfont')
 parser.add_argument(
     '--sf',
     type=str,
-    default='./sf/Splendid.136.sf2',
+    default='./sf/JV1080 Nice Piano_m.sf2',
     help='Select a sound font.'
 )
 args = parser.parse_args()
