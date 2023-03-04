@@ -1,5 +1,7 @@
 # midi2wav
 
+[![Python application](https://github.com/george-chou/midi2wav/actions/workflows/python-app.yml/badge.svg)](https://github.com/george-chou/midi2wav/actions/workflows/python-app.yml)
+
 A Python script for rendering MIDI files into WAV audios on x64 Windows 10
 
 ## Usage
