@@ -29,7 +29,5 @@ def render(midi_dir, audio_dir, font):
 
 
 if __name__ == "__main__":
-    midi_dir = './input'
-    audio_dir = './output'
-    sound_font = args.sf
-    render(midi_dir, audio_dir, sound_font)
+
+    render(midi_dir='./input', audio_dir='./output', sound_font=args.sf)
