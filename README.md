@@ -3,7 +3,7 @@
 [![license](https://img.shields.io/github/license/george-chou/midi2wav.svg)](https://www.gnu.org/licenses/lgpl-3.0.en.html)
 [![Python application](https://github.com/george-chou/midi2wav/actions/workflows/python-app.yml/badge.svg)](https://github.com/george-chou/midi2wav/actions/workflows/python-app.yml)
 
-A Python script for rendering MIDI into WAV on x64 Windows 10
+A Python script for rendering MIDI into WAV by SF2 on Windows 10 x64
 
 ## Usage
 

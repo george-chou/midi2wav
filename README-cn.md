@@ -3,7 +3,7 @@
 [![license](https://img.shields.io/github/license/george-chou/midi2wav.svg)](https://www.gnu.org/licenses/lgpl-3.0.en.html)
 [![Python application](https://github.com/george-chou/midi2wav/actions/workflows/python-app.yml/badge.svg)](https://github.com/george-chou/midi2wav/actions/workflows/python-app.yml)
 
-一款用于将 MIDI 渲染成 WAV 的 Python 脚本
+64 位 Win10 下的一款基于 SF2 音源的将 MIDI 渲染成 WAV 的 Python 脚本
 
 ## 使用方法
 
