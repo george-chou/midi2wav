@@ -12,6 +12,11 @@ parser.add_argument(
 args = parser.parse_args()
 
 
+def mkdir(outpath='./output'):
+    if not os.path.exists(outpath):
+        os.makedirs(outpath)
+
+
 def render(midi_dir, audio_dir, font):
     fs = FluidSynth(sound_font=font)
     for _, _, filenames in os.walk(midi_dir):
@@ -19,12 +24,12 @@ def render(midi_dir, audio_dir, font):
             input = midi_dir + '/' + filename
             fontname = font.replace("\\", "/").split('/')[-1][:-4]
             output = audio_dir + '/' + filename[:-4] + '(' + fontname + ').wav'
-            print(input, output)
+            mkdir(audio_dir)
             fs.midi_to_audio(input, output)
 
 
 if __name__ == "__main__":
     midi_dir = './input'
-    sound_font = args.sf
     audio_dir = './output'
+    sound_font = args.sf
     render(midi_dir, audio_dir, sound_font)
