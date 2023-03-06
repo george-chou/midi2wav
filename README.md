@@ -5,6 +5,12 @@
 
 A Python script for rendering MIDI into WAV by SF2 on Windows 10 x64
 
+## Requirement
+```
+pip install midi2audio
+pip install xpinyin
+```
+
 ## Usage
 
 01. Install <a href="https://www.123pan.com/s/Hl2SVv-EbWRh.html" target="_blank">fluidsynth-2.2.4-win10-x64</a>;

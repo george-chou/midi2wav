@@ -5,6 +5,12 @@
 
 64 位 Win10 下的一款基于 SF2 音源的将 MIDI 渲染成 WAV 的 Python 脚本
 
+## 前置安装
+```
+pip install midi2audio
+pip install xpinyin
+```
+
 ## 使用方法
 
 01. 安装 <a href="https://www.123pan.com/s/Hl2SVv-EbWRh.html" target="_blank">fluidsynth-2.2.4-win10-x64</a>;
