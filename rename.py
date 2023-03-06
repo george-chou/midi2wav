@@ -22,6 +22,7 @@ def stringQ2B(ustring):
 def tranSpecial(ustring):
     ustring = ustring.replace('【', '[')
     ustring = ustring.replace('】', ']')
+    ustring = ustring.replace('·', '.')
     ustring = ustring.replace('「', '[')
     return ustring.replace('」', ']')
 
