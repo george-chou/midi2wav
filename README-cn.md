@@ -24,3 +24,8 @@ pip install xpinyin
 python render.py --sf "./sf/J800 Piano.sf2"
 ```
 4. 将渲染出的 WAV 文件从 `./output` 文件夹中取出。
+
+## 工作流程
+```
+MIDI input -(加标号)-> ordered -(转合法名称)-> renamed -(渲染)-> output WAV
+```

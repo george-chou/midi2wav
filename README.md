@@ -24,3 +24,8 @@ pip install xpinyin
 python render.py --sf "./sf/J800 Piano.sf2"
 ```
 1. Fetch WAV audios from `./output` path.
+
+## Workflow
+```
+MIDI input -(add order)-> ordered -(to valid name)-> renamed -(render)-> output WAV
+```
