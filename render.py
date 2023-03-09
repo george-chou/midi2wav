@@ -1,6 +1,7 @@
 import os
 import argparse
 from midi2audio import FluidSynth
+from rename import rename_invalid_filename
 
 parser = argparse.ArgumentParser(description='soundfont')
 parser.add_argument(
@@ -29,4 +30,5 @@ def render(midi_dir, audio_dir, sf):
 
 
 if __name__ == "__main__":
-    render(midi_dir='./input', audio_dir='./output', sf=args.sf)
+    rename_invalid_filename()
+    render(midi_dir='./renamed', audio_dir='./output', sf=args.sf)

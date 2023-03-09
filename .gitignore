@@ -1,4 +1,6 @@
 output/*
 sf/*
-backup/*
+ordered/*
+renamed/*
 input/*
+__pycache__/*
