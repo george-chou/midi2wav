@@ -17,7 +17,7 @@ pip install xpinyin
 
 1. Download <a href="https://www.123pan.com/s/Hl2SVv-kbWRh.html" target="_blank">soundfonts</a> into `./sf` directory;
 
-2. Put your MIDI files into `./input` directory;(If your MIDI filename has Chinese characters, please run `rename.py`, MIDIs before renamed will be copied into `./backup`)
+2. Put your MIDI files into `./input` directory;(If not exist, create one; If your MIDI filename has Chinese characters, please run `rename.py`, MIDIs before renamed will be copied into `./backup`)
 
 3. Run the following command as an example:
 ```
