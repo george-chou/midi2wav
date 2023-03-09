@@ -5,7 +5,7 @@
 
 A Python script for rendering MIDI into WAV by SF2 on Windows 10 x64
 
-## Requirement
+## Requirements
 ```
 pip install midi2audio
 pip install xpinyin
@@ -13,14 +13,14 @@ pip install xpinyin
 
 ## Usage
 
-01. Install <a href="https://www.123pan.com/s/Hl2SVv-EbWRh.html" target="_blank">fluidsynth-2.2.4-win10-x64</a>;
+0. Install <a href="https://www.123pan.com/s/Hl2SVv-EbWRh.html" target="_blank">fluidsynth-2.2.4-win10-x64</a>;
 
 1. Download <a href="https://www.123pan.com/s/Hl2SVv-kbWRh.html" target="_blank">soundfonts</a> into `./sf` directory;
 
-2. Put your MIDI files into `./input` directory;
+2. Put your MIDI files into `./input` directory;(If your MIDI filename has Chinese characters, please run `rename.py`, MIDIs before renamed will be copied into `./backup`)
 
 3. Run the following command as an example:
 ```
-python render.py --sf "./sf/JV1080 Nice Piano_m.sf2"
+python render.py --sf "./sf/J800 Piano.sf2"
 ```
-4. Fetch WAV audios from `./output` path.
+1. Fetch WAV audios from `./output` path.

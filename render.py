@@ -6,7 +6,7 @@ parser = argparse.ArgumentParser(description='soundfont')
 parser.add_argument(
     '--sf',
     type=str,
-    default='./sf/Arachno SoundFont - Version 1.0.sf2',
+    default='./sf/Yamaha-C5-Salamander-JNv5.1.sf2',
     help='Select a sound font.'
 )
 args = parser.parse_args()
