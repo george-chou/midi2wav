@@ -1,7 +1,7 @@
-from xpinyin import Pinyin
 import os
 import re
 import shutil
+from xpinyin import Pinyin
 
 
 def Q2B(uchar):
@@ -22,15 +22,12 @@ def stringQ2B(ustring):
 
 
 def filename_filter(ustring):
+    ustr = re.sub("[^\x00-\xff]", "#", ustring)  # rm all double byte chars
     dirty_stuff = ["\"", "\\", "/", "|", ":", "*", "<", ">", "?", "·"]
     for stuff in dirty_stuff:
-        ustring = ustring.replace(stuff, "#")
-
-    return ustring
-
-
-def tranSpecial(ustring):
-    return re.sub("[^\x00-\xff]", "#", ustring)
+        ustr = ustr.replace(stuff, "#")
+    # replace all dirty stuffs to #
+    return ustr
 
 
 def rename(resume_rootdir='./ordered'):
@@ -49,9 +46,8 @@ def rename(resume_rootdir='./ordered'):
             print(u'开始处理  {}'.format(obj))
             pinyin_name = pin.get_pinyin(
                 obj.encode('utf-8').decode('utf-8'), "")
-            pinyin_name = stringQ2B(pinyin_name)
-            pinyin_name = tranSpecial(pinyin_name)
-            pinyin_name = filename_filter(pinyin_name)
+            pinyin_name = stringQ2B(pinyin_name)  # to pinyin
+            pinyin_name = filename_filter(pinyin_name)  # filter invalid chars
             print(u'{} 新名字是:{}'.format(obj, pinyin_name))
             Newdir = os.path.join(resume_rootdir, pinyin_name)  # 新的文件路径
             os.rename(resume, Newdir)  # 重命名
